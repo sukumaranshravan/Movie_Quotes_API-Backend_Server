@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs")  %>
+
+<div class="container my-5">
+  
+    <div class="position-relative p-1 text-center text-white bg-dark border border-dashed rounded-5 my-2">
+      <!-- <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button> -->
+      <svg class="bi mt-2 mb-3" width="48" height="48"><use xlink:href="#check2-circle"></use></svg>
+      <h1 class="text-white" style="font-style: italic; font-weight: lighter; text-align:center; padding: 5px; height: 100px;">
+        "<%= movieQuotes.quote %>"
+      </h1>
+      <p class="col-lg-6 mx-auto mb-4" style="text-align: right;">
+        <%=movieQuotes.movie %>,<%=movieQuotes.year %> 
+      </p>
+      <button class="btn btn-outline-warning px-5 mb-5" type="button">
+        <a style="text-decoration: none; color: white;" href="/edit/<%= movieQuotes.id %>">Edit Quote</a>
+      </button>
+      <button class="btn btn-outline-danger px-5 mb-5" type="button">
+        <a style="text-decoration: none; color: white;" href="/remove/<%= movieQuotes.id %>">Delete Quote</a>
+      </button>
+    </div>
+<div style="text-align: center;">
+  <button class="btn btn-dark"><a href="/" class="btn text-white" style="font-weight: normal;">See Random Quote</a></button>
+</div>   
+</div>
+  </div>
+
+<%- include("partials/footer.ejs") %>

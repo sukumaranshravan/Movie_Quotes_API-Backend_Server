@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(223, 191, 9);
+}
+#quote-edit{
+    background-color:black  ;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 5px;
+    border: solid silver;
+    border-width: 5px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.quote-elements{
+    padding: 5px;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: rgb(75, 64, 2);
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+
+
+
